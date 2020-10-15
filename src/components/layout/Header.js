@@ -85,7 +85,8 @@ const Header = ({
             'site-header-inner',
             bottomDivider && 'has-bottom-divider'
           )}>
-          <Logo />
+          {/* <Logo /> */}
+           <a href="/"><img src ='https://static.wixstatic.com/media/5b4771_4bb8d6257edf4fda9b24348a1011de6b~mv2.jpg' width="100" height="100"/></a> 
           {!hideNav &&
             <>
               <button
@@ -112,7 +113,7 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Documentation</Link>
+                      <Link to="#0" onClick={closeMenu}>Sign In</Link>
                     </li>
                   </ul>
                   {!hideSignin &&

@@ -3,6 +3,8 @@ import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
+import { Link } from 'react-router-dom';
+
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -50,8 +52,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: 'Workflow that just works',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: 'Project AIM Lessons',
+    paragraph: 'Simplely select an lesson that you will like to start or continue. Each lesson has a brief description about what the lesson entails!'
   };
 
   return (
@@ -66,14 +68,17 @@ const FeaturesSplit = ({
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8" >
+                <Link to='/Lesson1'><p className="text-xxs text-color-primary fw-600 tt-u mb-8">Lesson 1</p></Link>
                   </div>
-                <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  <Link to='/Lesson1'>
+                    <h3 className="mt-0 mb-12" href="/ProjectAim">
+                      What is Legacy?
+                    </h3>
+                  </Link>
+               
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Introduces the Project AIM (Adult Identiy Mentoring) program. Youth discuss the concepts of what it means to create a legacy for oneself, the importance of having a goal for one's futures, and begin to think about their own future selves.
                   </p>
               </div>
               <div className={
@@ -83,7 +88,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-01.png')}
+                  src='https://assets.entrepreneur.com/content/3x2/2000/20190715192128-GettyImages-1074061764.jpeg'
                   alt="Features split 01"
                   width={528}
                   height={396} />
@@ -93,13 +98,18 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+
+                  <Link to='/Lesson2'> <p className="text-xxs text-color-primary fw-600 tt-u mb-8">Lesson 2</p></Link>
+
                   </div>
-                <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  <Link to='/Lesson2'>
+                    <h3 className="mt-0 mb-12" >
+                      Looking Ahead to My Future
+                    </h3>
+                  </Link>
+                
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Youth are encouraged to look ahead and envision their future. They will practice self-confidence strategies to help them prepare for positive future.
                   </p>
               </div>
               <div className={
@@ -109,7 +119,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-02.png')}
+                  src='https://daviescpa.com/wp-content/uploads/looking-ahead.jpg'
                   alt="Features split 02"
                   width={528}
                   height={396} />
@@ -119,13 +129,17 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                  <Link to ='/Lesson3'><p className="text-xxs text-color-primary fw-600 tt-u mb-8">Lesson 3</p></Link>
+                  
                   </div>
-                <h3 className="mt-0 mb-12">
-                  Data-driven insights
-                  </h3>
+                  <Link to ='/Lesson3'>
+                    <h3 className="mt-0 mb-12">
+                      Guest Speakers
+                    </h3>
+                  </Link>
+                
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Visits from young adults who have professional experience to share with youth how they overcame obstacles, and how they had to prepare for their future. 
                   </p>
               </div>
               <div className={
@@ -135,7 +149,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/features-split-image-03.png')}
+                  src='https://cdn.shrm.org/image/upload/c_crop%2Ch_954%2Cw_1697%2Cx_0%2Cy_55/c_fit%2Cw_767/v1/Events/iStock_87873381_MEDIUM_mzbpu2?databtoa=eyIxNng5Ijp7IngiOjAsInkiOjU1LCJ4MiI6MTY5NywieTIiOjEwMDgsInciOjE2OTcsImgiOjk1NH19'
                   alt="Features split 03"
                   width={528}
                   height={396} />

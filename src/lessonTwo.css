@@ -1,0 +1,106 @@
+.Web-Chart{
+    /* margin-top: 300px;
+    margin-left: 500px; */
+    margin: auto;
+    width: 50%;
+    /* padding: 10px; */
+    margin-top: 10%;
+}
+
+.web-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    gap: 10px 10px;
+    grid-template-areas:
+      "positive-future negative-future "
+      "positive-button negative-button "
+      ;
+  }
+  .positive-future { grid-area: positive-future; }
+  .negative-future { grid-area: negative-future; }
+  .positive-button { grid-area: positive-button; 
+                        margin-left: 30%;
+                        margin-right: 50%;
+                        height: 30%;
+                        width: 30%;
+                    }
+  .negative-button { grid-area: negative-button; 
+                        margin-left: 30%;
+                        margin-right: 50%;
+                        height: 30%;
+                        width: 30%;
+                    }
+
+.Note-Taking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.Note-Taking input {
+    padding: 12px 20px;
+  margin: 8px 0;
+  
+}
+
+.email{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    margin-bottom: 5%;
+    
+}
+.Email{
+    display: flex;
+    flex-direction: column;
+}
+.Email button{
+    width: 10%;
+}
+
+.container4 button{
+    left: 50%;
+ }
+div.container4 p {
+    text-align: center;
+    }
+div.container4 h1 {
+    text-align: center;
+    }
+input[type=submit]:hover {
+        background-color:rgb(97,99,255);
+      }
+@media only screen and (max-width: 1199px){
+.web-grid{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr  ;
+    gap: 10px 10px;
+    grid-template-areas:
+      "positive-future "
+      "negative-future "
+      "positive-button "
+      "negative-button" ;
+}
+.Web-Chart{
+    width: 100vw;
+}
+.positive-button, .negative-button{
+    height: 100%;
+    margin-bottom: 5%;
+}
+.thirdSection {
+    background-color: #FFEDE1;
+    /* padding-left: 5%; */
+}
+
+.AboutMe{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+    
+    } 

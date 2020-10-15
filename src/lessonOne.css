@@ -1,0 +1,76 @@
+.LegacyContainer1 {
+    position: relative;
+    width: 150px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(97,99,255);
+  }
+  
+ 
+  .LegacyContainer1:hover .overlay {
+    opacity: 1;
+  }
+ 
+  
+  .text {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 8px 0px;
+    grid-template-areas:
+      "LegacyContainer1 LegacyContainer2 LegacyContainer3 LegacyContainer4 LegacyContainer5"
+      "LegacyContainer6 LegacyContainer7 LegacyContainer8 LegacyContainer9 LegacyContainer10"
+      "LegacyContainer11 LegacyContainer12 LegacyContainer13 LegacyContainer14 LegacyContainer15"
+      "LegacyContainer16 LegacyContainer17 LegacyContainer18 LegacyContainer19 LegacyContainer20"
+      ;
+  }
+  .LegacyContainer1 { grid-area: LegacyContainer1; }
+  .LegacyContainer2 { grid-area: LegacyContainer2; }
+  .LegacyContainer3 { grid-area: LegacyContainer3; }
+  .LegacyContainer4 { grid-area: LegacyContainer4; }
+  .LegacyContainer5 { grid-area: LegacyContainer5; }
+  .LegacyContainer6 { grid-area: LegacyContainer6; }
+  .LegacyContainer7 { grid-area: LegacyContainer7; }
+  .LegacyContainer8 { grid-area: LegacyContainer8; }
+  .LegacyContainer9 { grid-area: LegacyContainer9; }
+  .LegacyContainer10 { grid-area: LegacyContainer10; }
+  .LegacyContainer11 { grid-area: LegacyContainer11; }
+  .LegacyContainer12 { grid-area: LegacyContainer12; }
+  .LegacyContainer13 { grid-area: LegacyContainer13; }
+  .LegacyContainer14 { grid-area: LegacyContainer14; }
+  .LegacyContainer15 { grid-area: LegacyContainer15; }
+  .LegacyContainer16 { grid-area: LegacyContainer16; }
+  .LegacyContainer17 { grid-area: LegacyContainer17; }
+  .LegacyContainer18 { grid-area: LegacyContainer18; }
+  .LegacyContainer19 { grid-area: LegacyContainer19; }
+  .LegacyContainer20 { grid-area: LegacyContainer20; }

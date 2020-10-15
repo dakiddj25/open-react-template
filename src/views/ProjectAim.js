@@ -6,17 +6,14 @@ import FeaturesSplit from '../components/sections/FeaturesSplit';
 import Testimonial from '../components/sections/Testimonial';
 import Cta from '../components/sections/Cta';
 
-const Home = () => {
+const ProjectAim = () => {
 
   return (
     <>
-      <Hero className="illustration-section-01" />
-      <FeaturesTiles />
-      {/* <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" /> */}
+      <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
       <Testimonial topDivider />
-      {/* <Cta split /> */}
     </>
   );
 }
 
-export default Home;
+export default ProjectAim;

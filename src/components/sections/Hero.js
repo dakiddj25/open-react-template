@@ -61,38 +61,33 @@ const Hero = ({
         <div className={innerClasses}>
           <div className="hero-content">
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Landing template for <span className="text-color-primary">startups</span>
+              Project Aim Done <span className="text-color-primary">Virtually</span>
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
+                This is a project AIM Demo! This Demo will consist of the first three lessons of Project Aim!
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
+                  <Button tag="a" color="primary" wideMobile href="/ProjectAim">
                     Get started
                     </Button>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
+                  {/* <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
                     View on Github
-                    </Button>
+                    </Button> */}
                 </ButtonGroup>
               </div>
             </div>
           </div>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-            <a
-              data-video="https://player.vimeo.com/video/174002812"
-              href="#0"
-              aria-controls="video-modal"
-              onClick={openModal}
-            >
+           
               <Image
                 className="has-shadow"
-                src={require('./../../assets/images/video-placeholder.jpg')}
+                src='https://images.squarespace-cdn.com/content/v1/520c1ea8e4b01247d71216d2/1588023262751-C974ZKJLBPUIKFI1FRAB/ke17ZwdGBToddI8pDm48kG0qCrUZS00cTqK3b95hEn57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcTNLJ5KKBPx6T4fVh_olot7mHgjZbxmVkjKySUJ7Hfe-0wLm2kdahwSwbL87iDKXQ/IMG_9898.jpg?format=2500w'
                 alt="Hero"
                 width={896}
                 height={504} />
-            </a>
+            
           </div>
           <Modal
             id="video-modal"
